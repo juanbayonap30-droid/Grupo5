@@ -49,6 +49,16 @@ export default function Sidebar({ userRole, userName, isOpen, onToggle }) {
     ],
     administrador: [
       {
+        label: 'Revisar Solicitudes',
+        path: '/dashboard/admin/solicitudes',
+        icon: '📝'
+      },
+      {
+        label: 'Historial',
+        path: '/dashboard/admin/historial',
+        icon: '🔄'
+      },
+      {
         label: 'Usuarios',
         path: '/dashboard/admin/usuarios',
         icon: '👥'

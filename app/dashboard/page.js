@@ -20,7 +20,11 @@ const DashboardAdministrador = ({ router }) => (
     <StatCard title="Bienes en Mi Edificio" value="234" color="from-[#39A900] to-[#007832]" />
     <StatCard title="Solicitudes Pendientes" value="12" color="from-orange-500 to-orange-600" />
     <StatCard title="Movimientos Hoy" value="8" color="from-purple-500 to-purple-600" />
-    <ActionCard title="Revisar Solicitudes" description="Aprobar o rechazar solicitudes de préstamo" />
+    <ActionCard 
+      title="Revisar Solicitudes" 
+      description="Aprobar o rechazar solicitudes de préstamo"
+      onClick={() => router.push('/dashboard/admin/solicitudes')}
+    />
     <ActionCard title="Bienes del Edificio" description="Ver bienes, entradas y salidas" />
     <ActionCard title="Generar Reportes" description="Reportes de solicitudes y movimientos" />
     <ActionCard 
